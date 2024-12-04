@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Kerfin7-NEA-2195.jpg" />
+    <None Remove="Resources\logo.png" />
+    <None Remove="Resources\Spirited-Away.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Kerfin7-NEA-2195.jpg" />
+    <Resource Include="Resources\logo.png" />
+    <Resource Include="Resources\Spirited-Away.jpg" />
+  </ItemGroup>
+
+</Project>
